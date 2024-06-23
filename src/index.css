@@ -126,7 +126,7 @@
 
 body {
 	font-family: var(--ff-poppins);
-	background-color: var(--white);
+	background-image: url('./assets/players.jpg');
 	line-height: var(--lh-1);
 	-webkit-font-smoothing: antialiased;
 }
@@ -161,7 +161,7 @@ a {
 }
 
 button {
-	background-color: green;
+	background-color: rgb(4, 13, 4);
 	border: none;
 	cursor: pointer;
 	text-align: center;
@@ -209,10 +209,10 @@ i {
 }
 
 .btn {
-	color: var(rgb(29, 29, 31));
-	background-color: var(rgb(219, 31, 31));
+	color: rgb(246, 237, 237);
+	background-color: #0b0c0c;
 	font-size: 0.9rem;
-	padding: 3px 10px;
+	padding: 7px 19px;
 	white-space: normal;
 	border-radius: var(--radius-5);
 	box-shadow: 0 0 2px var(--black_80);
