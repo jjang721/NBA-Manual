@@ -207,20 +207,22 @@ i {
 	gap: 1rem;
 	margin-top: 3rem;
 }
+/* this is for top header buttons */
 
 .btn {
 	color: rgb(246, 237, 237);
 	background-color: #0b0c0c;
 	font-size: 0.9rem;
-	padding: 7px 19px;
+	padding: 10px 22px;
 	white-space: normal;
 	border-radius: var(--radius-5);
 	box-shadow: 0 0 2px var(--black_80);
 	transition: 0.2s ease-out;
+	font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .btn-danger {
-	background-color: var(Hex #4681f4);
+	background-color: rgb(140, 54, 54);
 }
 
 .btn:hover {
@@ -228,7 +230,7 @@ i {
 }
 
 .btn-danger:hover {
-	background-color: hsl(351, 81%, 65%);
+	background-color: hsl(351, 84%, 25%);
 }
 
 .bi-plus-square {
@@ -255,6 +257,7 @@ i {
 .athlete__item {
 	width: 100%;
 	background-color: #ecf1f1;
+	
 	padding: .88rem;
 	border-radius: var(--radius-5);
 	cursor: pointer;
@@ -264,15 +267,16 @@ i {
 
 .athlete__header {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column-reverse;
 	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
 	column-gap: 12px;
+	
 }
 
 .athlete__image {
-	width: 50px;
+	width: 70px;
 }
 
 .athlete__image img {
