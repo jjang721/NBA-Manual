@@ -218,6 +218,7 @@ i {
 	flex-wrap: wrap;
 	gap: 1rem;
 	margin-top: 3rem;
+	/* background-color: lightpink; */
 }
 /* this is for top header buttons */
 
@@ -268,13 +269,20 @@ i {
 
 .athlete__item {
 	width: 100%;
-	background-color: #ecf1f1;
+	background-color: #2668af;
 	
 	padding: .88rem;
 	border-radius: var(--radius-5);
 	cursor: pointer;
 	min-height: max-content;
 	/* max-width: 280px; */
+}
+.athlete__item:hover{
+	display: inline-block;
+	margin: 0 0.5rem;
+  
+	animation: bounce; /* referring directly to the animation's @keyframe declaration */
+	animation-duration: 1s; /* don't forget to set a duration! */
 }
 
 .athlete__header {
