@@ -240,6 +240,12 @@ i {
 
 .btn:hover {
 	background-color: var(--selective-blue-3);
+	display: inline-block;
+	margin: 0 0.5rem;
+  
+	animation: pulse; /* referring directly to the animation's @keyframe declaration */
+	animation-duration: 1s; /* don't forget to set a duration! */
+	
 }
 
 .btn-danger:hover {
@@ -277,11 +283,12 @@ i {
 	min-height: max-content;
 	/* max-width: 280px; */
 }
+/* boxes for the athletes */
 .athlete__item:hover{
 	display: inline-block;
 	margin: 0 0.5rem;
   
-	animation: bounce; /* referring directly to the animation's @keyframe declaration */
+	animation: pulse; /* referring directly to the animation's @keyframe declaration */
 	animation-duration: 1s; /* don't forget to set a duration! */
 }
 
