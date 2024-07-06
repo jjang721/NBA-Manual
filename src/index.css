@@ -203,6 +203,12 @@ i {
 
 /* UTILITIES */
 
+.list_left{
+	text-align: left;
+	color: rgb(246, 237, 237);
+	background-color: #636c6c;
+}
+
 .container {
 	width: min(1200px, 100% - 2rem);
 	margin-inline: auto;

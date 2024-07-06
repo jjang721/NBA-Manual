@@ -6,7 +6,7 @@ const Header = ({toggleModal, numberOfAthletes}) => {
   return (
     <header className='header'>
         <div className='container'>
-            <button className = 'btn'>Athlete List ({numberOfAthletes})</button>
+            <div className = 'list_left'>Athlete List ({numberOfAthletes})</div>
             <p className='bruh'>Welcome to the NBA Learner's Guide!</p>
             <button onClick={() => toggleModal(true)} className='btn'>
                 <i class='bi-plus-square'></i>
