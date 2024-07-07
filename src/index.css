@@ -205,8 +205,11 @@ i {
 
 .list_left{
 	text-align: left;
+	font-family: 'Playfair Display', serif;
 	color: rgb(246, 237, 237);
 	background-color: #636c6c;
+	padding: 20px;
+	border-radius: 25px;
 }
 
 .container {
