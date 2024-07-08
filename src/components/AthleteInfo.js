@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { getAthlete } from '../api/AthleteService';
+import { getAthlete, deleteAthlete } from '../api/AthleteService';
 
 
 const AthleteInfo = ({ updateAthlete, updateImage }) => {
@@ -29,6 +29,16 @@ const AthleteInfo = ({ updateAthlete, updateImage }) => {
             console.log(error);
         }
     };
+    const deleteAthlete = async (id) => {
+        try {
+            const { data } = await deleteAthlete(id);
+            deleteAthlete(data);
+
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
 
     const selectImage = () => {
         inputRef.current.click();
@@ -107,6 +117,7 @@ const AthleteInfo = ({ updateAthlete, updateImage }) => {
                             </div>
                             <div className="form_footer">
                                 <button type="submit" className="btn">Save</button>
+                                 <button onClick={deleteAthlete} className="btn">Delete</button>
                             </div>
                         </form>
                     </div>

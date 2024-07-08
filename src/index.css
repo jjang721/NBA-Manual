@@ -300,6 +300,18 @@ i {
 	animation: pulse; /* referring directly to the animation's @keyframe declaration */
 	animation-duration: 1s; /* don't forget to set a duration! */
 }
+.delete{
+	color: rgb(106, 22, 22);
+	background-color: #0b0c0c;
+	font-size: 0.9rem;
+	padding: 10px 22px;
+	white-space: normal;
+	border-radius: var(--radius-5);
+	box-shadow: 0 0 2px var(--black_80);
+	transition: 0.2s ease-out;
+	font-family: "Lucida Console", "Courier New", monospace;
+
+}
 
 .athlete__header {
 	display: flex;
@@ -625,6 +637,9 @@ input[type=file]::file-selector-button:hover {
 }
 
 .form_footer .btn {
+	padding: 7px 15px;
+}
+.form_footer .delete {
 	padding: 7px 15px;
 }
 

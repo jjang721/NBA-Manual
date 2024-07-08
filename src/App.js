@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import AthleteList from './components/AthleteList';
 import AthleteInfo from './components/AthleteInfo';
-import { getAthletes, saveAthlete, updatePhoto } from './api/AthleteService';
+import { getAthletes, saveAthlete, updatePhoto, deleteAthlete } from './api/AthleteService';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { toastError } from './api/ToastService';
 import { ToastContainer } from 'react-toastify';
@@ -27,6 +27,20 @@ function App() {
 
   });
 
+  const handleDelete = async (athleteId) => {
+    if (window.confirm('Are you sure you want to delete this athlete?')) {
+      try {
+        await deleteAthlete(athleteId);
+        getAllAthletes(); // Refresh athlete list after deletion
+      } catch (error) {
+        console.error('Error deleting athlete:', error);
+        // Handle error, show error message
+      }
+    }
+  };
+
+  
+
 
   const getAllAthletes = async (page = 0, size = 10) => {
     try {
@@ -38,6 +52,7 @@ function App() {
       console.log(error);
     }
   };
+  
 
   const updateAthlete = async (athlete) => {
     try {
@@ -153,6 +168,7 @@ function App() {
             <div className="form_footer">
               <button onClick={() => toggleModal(false)} type='button' className="btn btn-danger">Cancel</button>
               <button type='submit' className="btn">Save</button>
+               {/* <button onClick={handleDelete} className="delete">Delete</button> */}
             </div>
           </form>
         </div>
