@@ -29,13 +29,14 @@ const AthleteInfo = ({ updateAthlete, updateImage }) => {
             console.log(error);
         }
     };
-    const deleteAthlete = async (id) => {
+    const handleDeleteAthlete = async (id) => {
         try {
-            const { data } = await deleteAthlete(id);
-            deleteAthlete(data);
-
+            await deleteAthlete(id);
+            console.log(`Athlete with ID ${id} deleted successfully`);
+            // Optionally perform additional actions after successful deletion
         } catch (error) {
-            console.log(error);
+            console.error('Error deleting athlete:', error);
+            // Handle error if needed
         }
     };
 
@@ -65,6 +66,7 @@ const AthleteInfo = ({ updateAthlete, updateImage }) => {
         event.preventDefault();
         await updateAthlete(athlete);        
         fetchAthlete(id);
+        deleteAthlete(id)
         //toastSuccess('Contact Updated');
     };
 
@@ -117,7 +119,7 @@ const AthleteInfo = ({ updateAthlete, updateImage }) => {
                             </div>
                             <div className="form_footer">
                                 <button type="submit" className="btn">Save</button>
-                                 <button onClick={deleteAthlete} className="btn">Delete</button>
+                                 <button onClick={handleDeleteAthlete} className="btn">Delete</button>
                             </div>
                         </form>
                     </div>

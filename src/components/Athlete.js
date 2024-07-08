@@ -9,7 +9,8 @@ const Athlete = ({ athlete }) => {
                     <img src={athlete.photoUrl} alt={athlete.name}  />
                 </div>
                 <div className="athlete__details">
-                    <p className="athlete_name">{athlete.name.substring(0, 15)} </p>
+                    {/* length of name */}
+                    <p className="athlete_name">{athlete.name.substring(0, 30)} </p>
                     <p className="athlete_title">{athlete.title}</p>
                 </div>
             </div>
