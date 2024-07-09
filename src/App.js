@@ -168,7 +168,6 @@ function App() {
             <div className="form_footer">
               <button onClick={() => toggleModal(false)} type='button' className="btn btn-danger">Cancel</button>
               <button type='submit' className="btn">Save</button>
-               {/* <button onClick={handleDelete} className="delete">Delete</button> */}
             </div>
           </form>
         </div>
