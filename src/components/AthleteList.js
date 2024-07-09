@@ -4,7 +4,7 @@ import Athlete from './Athlete'
 const AthleteList = ({ data,currentPage,getAllAthletes}) => {
   return (
     <main className='main'>
-        {data?.content?.length === 0 && <div>No athletes yet</div>}
+        {data?.content?.length === 0 && <div>No athletes yet...</div>}
         <ul className='athlete__list'>
             {data?.content?.length > 0 && data.content.map(athlete => 
             <Athlete athlete={athlete} key={athlete.id} />)}
