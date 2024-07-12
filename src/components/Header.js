@@ -7,7 +7,7 @@ const Header = ({toggleModal, numberOfAthletes}) => {
     <header className='header'>
         <div className='container'>
             <div className = 'list_left'>Athlete List ({numberOfAthletes})</div>
-            <p className='bruh'>Welcome to the NBA Learner's Guide!</p>
+            <p className='bruh'>Welcome to the NBA Learner's Manual!</p>
             <button className = 'btn'>ML predictor!</button>
             <button onClick={() => toggleModal(true)} className='btn'>
                 <i class='bi-plus-square'></i>

@@ -355,6 +355,8 @@ i {
 	animation: pulse; /* referring directly to the animation's @keyframe declaration */
 	animation-duration: 1s; /* don't forget to set a duration! */
 }
+
+
 .delete{
 	color: rgb(106, 22, 22);
 	background-color: #0b0c0c;
