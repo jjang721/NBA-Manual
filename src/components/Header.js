@@ -8,7 +8,7 @@ const Header = ({toggleModal, numberOfAthletes}) => {
         <div className='container'>
             <div className = 'list_left'>Athlete List ({numberOfAthletes})</div>
             <p className='bruh'>Welcome to the NBA Learner's Manual!</p>
-            <button className = 'btn'>ML model!</button>
+            <button className = 'btn'>ML model</button>
             <button onClick={() => toggleModal(true)} className='btn'>
                 <i class='bi-plus-square'></i>
                 Add New Player
