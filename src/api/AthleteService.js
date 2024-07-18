@@ -5,8 +5,8 @@ const API_URL = 'http://localhost:8080/athletes';
 export async function saveAthlete(athlete){
     return await axios.post(API_URL, athlete);
 }
-export async function deleteAthlete(athlete){
-    return await axios.delete(API_URL, athlete);
+export async function deleteAthlete(id){
+    return await axios.delete(`${API_URL}/${id}`);
 }
 
 export async function getAthletes(page = 0, size = 10){

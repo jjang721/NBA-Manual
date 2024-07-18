@@ -32,7 +32,7 @@ const AthleteInfo = ({ updateAthlete, updateImage }) => {
     const handleDeleteAthlete = async (id) => {
         try {
             await deleteAthlete(id);
-            console.log(`Athlete with ID ${id} deleted successfully`);
+            // console.log(response.data);
             // Optionally perform additional actions after successful deletion
         } catch (error) {
             console.error('Error deleting athlete:', error);
@@ -66,7 +66,6 @@ const AthleteInfo = ({ updateAthlete, updateImage }) => {
         event.preventDefault();
         await updateAthlete(athlete);        
         fetchAthlete(id);
-        deleteAthlete(id)
         //toastSuccess('Contact Updated');
     };
 
@@ -100,10 +99,10 @@ const AthleteInfo = ({ updateAthlete, updateImage }) => {
                                     <span className="details">Team</span>
                                     <input type="text" value={athlete.team} onChange={onChange} name="team" required />
                                 </div>
-                                <div className="input-box">
+                                {/* <div className="input-box">
                                     <span className="details">Position</span>
                                     <input type="text" value={athlete.position} onChange={onChange} name="position" required />
-                                </div>
+                                </div> */}
                                 <div className="input-box">
                                     <span className="details">PPG</span>
                                     <input type="text" value={athlete.ppg} onChange={onChange} name="ppg" required />
