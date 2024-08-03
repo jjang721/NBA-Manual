@@ -32,7 +32,6 @@ const AthleteInfo = ({ updateAthlete, updateImage }) => {
     const handleDeleteAthlete = async (id) => {
         try {
             await deleteAthlete(id);
-            // console.log(response.data);
             // Optionally perform additional actions after successful deletion
         } catch (error) {
             console.error('Error deleting athlete:', error);
