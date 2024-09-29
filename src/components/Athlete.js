@@ -15,7 +15,7 @@ const Athlete = ({ athlete }) => {
                 </div>
             </div>
             <div className="athlete__body">
-                <p><i class="bi bi-microsoft-teams"></i> Team: {athlete.team} </p>
+                <p ><i class="bi bi-microsoft-teams"></i> Team: {athlete.team} </p>
                 <p><i className="bi bi-geo"></i> Points per game: {athlete.ppg}</p>
                 <p><i className="bi bi-telephone"></i> Rebounds per game: {athlete.rpg}</p>
                 <p>{athlete.status === 'Active' ? <i className='bi bi-check-circle'></i> : 

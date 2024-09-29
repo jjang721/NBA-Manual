@@ -633,6 +633,10 @@ dialog[open] {
 	}
 }
 
+.textyellow{
+	color: yellow
+}
+
 
 /* IMPORTED STYLES */
 .user-details {
